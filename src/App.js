@@ -47,7 +47,7 @@ class Form extends Component {
     render() {
         return (
             <Container className="position-relative">
-                <div className="w-50 border mt-5 p-3 m-auto">В Москве {this.state.lat} °С</div>
+                <div className="w-50 border mt-5 p-3 m-auto">В Москве {this.state.temp} °С</div>
                 <button type="button" className="border mt-4 position-absolute top-30 start-50 translate-middle"
                     // className="button button__main button__long"
                     // disabled={newItemLoading}
