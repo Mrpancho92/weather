@@ -16,15 +16,13 @@ class Form extends Component {
         this.onRequest();
     }
 
-  /*   onRequestButton = () => {
-        this.onRequest();
-        this.onRequest();
-    } */ 
+    onRequestButton = () => {
+       this.onRequest2();
+    } 
 
     onRequest = () => {        
     this.weatherservice.getCitylocation()
                 .then(this.onCharListLoaded)
-                .then(this.onRequest2) 
                 .catch('this.onError');  
     }
  
