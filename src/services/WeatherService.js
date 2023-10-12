@@ -1,5 +1,5 @@
 class WeatherService {
-    _apiCitylocation = 'http://api.openweathermap.org/geo/1.0/direct?q=Moscow&limit=1&';
+    _apiCitylocation = 'https://api.openweathermap.org/geo/1.0/direct?q=Moscow&limit=1&';
     _apiKey = 'appid=1781c3a2aa1cc915770dad5e8ab7bdb0';
     _apiCityWeater = 'https://api.openweathermap.org/data/2.5/weather?';
     
