@@ -14,7 +14,7 @@ class Form extends Component {
 
     componentDidMount() {
         this.onRequest();
-    }  
+    }
 
   /*   onRequestButton = () => {
         this.onRequest();
@@ -24,6 +24,7 @@ class Form extends Component {
     onRequest = () => {        
     this.weatherservice.getCitylocation()
                 .then(this.onCharListLoaded)
+                .then(this.onRequest2) 
                 .catch('this.onError');  
     }
  
@@ -31,13 +32,15 @@ class Form extends Component {
         this.setState({
              lat: cityLocation.lat,
              lon: cityLocation.lon
-        });
-        
-        if (this.state.lat === null || this.state.lon === null ) return
-        this.weatherservice.getCityWeater(this.state.lat, this.state.lon)
-                .then(this.onCharListLoaded2)
-                .catch('this.onError2');
+        }); 
     }
+
+    onRequest2 = () => {    
+         if (this.state.lat === null || this.state.lon === null ) return   
+        this.weatherservice.getCityWeater(this.state.lat, this.state.lon)
+        .then(this.onCharListLoaded2)
+        .catch('this.onError2');  
+        }
 
      onCharListLoaded2 = (cityWeater) => {
         this.setState({
