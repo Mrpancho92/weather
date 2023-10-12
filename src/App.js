@@ -18,7 +18,6 @@ class Form extends Component {
         visibility: null,
         wind_speed: null,
         clouds_all: null,
-
     }
     weatherservice = new WeatherService();
 
@@ -68,36 +67,36 @@ class Form extends Component {
     render() {
         return (
             <Container className="position-relative">
-                <div className="w-50 mt-1 p-1 m-auto fw-bold">В Москве:</div>
+                <div className="w-100 mt-1 p-1 m-auto fw-bold">В Москве:</div>
 
-                <div className="w-50 border mt-1 p-1 m-auto">Температура воздуха:    
+                <div className="w-100 border mt-1 p-1 m-auto">Температура воздуха:    
                 <span className="fw-bold"> {this.state.temp}</span> °С</div>
 
-                <div className="w-50 border mt-1 p-1 m-auto">Температура воздуха по ощущению: 
+                <div className="w-100 border mt-1 p-1 m-auto">Температура воздуха по ощущению: 
                 <span className="fw-bold"> {this.state.feels_like}</span> °С</div>
 
-                <div className="w-50 border mt-1 p-1 m-auto">Температура воздуха min: 
+                <div className="w-100 border mt-1 p-1 m-auto">Температура воздуха min: 
                 <span className="fw-bold"> {this.state.temp_min}</span> °С</div>
 
-                <div className="w-50 border mt-1 p-1 m-auto">Температура воздуха max: 
+                <div className="w-100 border mt-1 p-1 m-auto">Температура воздуха max: 
                 <span className="fw-bold"> {this.state.temp_max}</span> °С</div>
 
-                <div className="w-50 border mt-1 p-1 m-auto">Атмосферное давление на уровне моря: 
+                <div className="w-100 border mt-1 p-1 m-auto">Атмосферное давление на уровне моря: 
                 <span className="fw-bold"> {this.state.pressure}</span> мм.рт.ст</div>
 
-                <div className="w-50 border mt-1 p-1 m-auto">Влажность: 
+                <div className="w-100 border mt-1 p-1 m-auto">Влажность: 
                 <span className="fw-bold"> {this.state.humidity}</span>  %</div>
 
-                <div className="w-50 border mt-1 p-1 m-auto">Атмосферное давление на уровне земли: 
+                <div className="w-100 border mt-1 p-1 m-auto">Атмосферное давление на уровне земли: 
                 <span className="fw-bold"> {this.state.grnd_level}</span> мм.рт.ст</div>
 
-                <div className="w-50 border mt-1 p-1 m-auto">Видимость: 
+                <div className="w-100 border mt-1 p-1 m-auto">Видимость: 
                 <span className="fw-bold"> {this.state.visibility}</span> м</div>
 
-                <div className="w-50 border mt-1 p-1 m-auto">Скорость ветра: 
+                <div className="w-100 border mt-1 p-1 m-auto">Скорость ветра: 
                 <span className="fw-bold"> {this.state.wind_speed}</span> м/c</div>
 
-                <div className="w-50 border mt-1 p-1 m-auto">Облачность: 
+                <div className="w-100 border mt-1 p-1 m-auto">Облачность: 
                 <span className="fw-bold"> {this.state.clouds_all}</span> %</div>
 
                 <button type="button" className="border mt-4 position-absolute top-30 start-50 translate-middle"
