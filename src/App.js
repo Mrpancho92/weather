@@ -32,6 +32,7 @@ class Form extends Component {
              lat: cityLocation.lat,
              lon: cityLocation.lon
         });
+        
         if (this.state.lat === null || this.state.lon === null ) return
         this.weatherservice.getCityWeater(this.state.lat, this.state.lon)
                 .then(this.onCharListLoaded2)
